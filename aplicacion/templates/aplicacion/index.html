@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
     <head>
         <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NMJVCHJ8');</script>
     <!-- End Google Tag Manager -->
-        {% load static %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJRK7MBXTB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BJRK7MBXTB');
+</script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Psicóloga Julia Torne</title>
+        <meta name="description" content="Psicóloga Julia Torne en Fisherton — terapia individual, equinoterapia y acompañamiento terapéutico. Turnos presenciales y online para adultos y niños." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://juliaps.com/" />
+        <!-- Open Graph -->
+        <meta property="og:title" content="Psicología Fisherton - Psicóloga Julia Torne" />
+        <meta property="og:description" content="Terapia individual, equinoterapia y acompañamiento terapéutico en Fisherton. Turnos presenciales y online. Contacto: +54 9 341 649 8726" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://juliaps.com/" />
+        <meta property="og:image" content="https://juliaps.com/static/aplicacion/assets/img/logo.png" />
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Psicología Fisherton - Psicóloga Julia Torne" />
+        <meta name="twitter:description" content="Psicología Fisherton - Psicóloga Julia Torne - Terapia individual, equinoterapia y acompañamiento terapéutico. Turnos presenciales y online." />
+        <meta name="twitter:image" content="https://juliaps.com/static/aplicacion/assets/img/logo.png" />
+        <title>Psicología Fisherton - Psicóloga Julia Torne</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{% static 'aplicacion/assets/logo.ico' %}" />
+        <link rel="icon" type="image/x-icon" href="logo.ico" />
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Fontawesome Icons-->
@@ -26,8 +46,8 @@
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{% static 'aplicacion/css/styles.css' %}" rel="stylesheet" />
-        <link href="{% static 'aplicacion/css/whatsapp.css' %}" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet" />
+        <link href="whatsapp.css" rel="stylesheet">
     </head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://wa.me/+5493416498726" class="float" target="_blank">
@@ -43,45 +63,41 @@
 <!-- -------------------------------NAVEGACION--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <!-- Navigation-->
-        
-        {% block Navegacion %}           
+                  
         <nav style="height: 9vh;" class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="{% url 'inicio' %}"><img src="{% static 'aplicacion/assets/img/logo.png' %}" height="50" width="">&nbsp;&nbsp;&nbsp;Psicóloga Julia Torne</a>
+                <a class="navbar-brand" href=""><img src="logo.png" height="50" width="">&nbsp;&nbsp;&nbsp;Psicología Fisherton</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="btn btn-light btn-m" href="{% url 'turnos' %}">Sacar Turno</a></li>&nbsp;&nbsp;&nbsp;&nbsp;  
-                        <li class="nav-item"><a class="btn btn-light btn-m" href="{% url 'staff' %}">Nuestro Staff</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <li class="nav-item"><a class="btn btn-light btn-m" href="/turnos.html">Sacar Turno</a></li>&nbsp;&nbsp;&nbsp;&nbsp;  
+                        <li class="nav-item"><a class="btn btn-light btn-m" href="/staff.html">Nuestro Staff</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
                     </ul>
                 </div>
             </div>
         </nav>
-        {% endblock Navegacion %}
 <!-- -------------------------------FIN NAVEGACION--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
 <!-- --------------------------BODY------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <!-- Masthead-->
-        
-        {% block Body %}
-            
+                
         
             
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <h1 style="line-height: 1.5;" class="text-white font-weight-bold">Terapia individual - Equinoterapia - Acompañamiento terapéutico</h1>
+                    <h1 style="line-height: 1.5;" class="text-white font-weight-bold">Psicología Fisherton - Terapia individual - Equinoterapia - Acompañamiento terapéutico</h1>
                     <table id="slide" style="width: 50vh;border-color: #fff;" class="table">
 
                         <td>
                             <div class="container-slide">
                                 <div class="slide">
                                     <ul>
-                            <li><img src="{% static 'aplicacion/assets/img/carrusel-1.jpg' %}" alt=""></li>
-                            <li><img src="{% static 'aplicacion/assets/img/carrusel-2.jpg' %}" alt=""></li>
-                            <li><img src="{% static 'aplicacion/assets/img/carrusel-3.jpg' %}" alt=""></li>
+                            <li><img src="carrusel-1.jpg" alt="Psicología Fisherton"></li>
+                            <li><img src="carrusel-2.jpg" alt="Psicología Fisherton"></li>
+                            <li><img src="carrusel-3.jpg" alt="Psicología Fisherton"></li>
                                     </ul>
                                 </div>
                             </div>
@@ -105,7 +121,7 @@
 
 
 
-        {% endblock Body %}
+
 <!-- --------------------------FIN BODY------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
@@ -116,21 +132,21 @@
         
             
         <!-- Footer-->
-        {% block footer %}
+
         <footer style="height: 10vh;" id="footer" class="bg-light py-4">
             <div class="row gx-4 gx-lg-5 justify-content-center">
 
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
 
                     <ul class="list-inline mb-0">
-                        <div class="small text-center text-muted">Copyright &copy; 2024 - Jeronimo Torne</div>
+                        <div class="small text-center text-muted">Copyright &copy; 2025 - Jeronimo Torne</div>
                     </ul>
                 </div>
 
             </div>
             
         </footer>
-        {% endblock %}
+
         
 
 <!-- --------------------------------------FIN FOOTER-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -140,7 +156,7 @@
         <!-- SimpleLightbox plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
-        <script src="{% static 'aplicacion/js/scripts.js' %}"></script>
+        <script src="aplicacion/js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
@@ -161,6 +177,18 @@
         
           // Establece el temporizador para ocultar el mensaje después de 5 segundos (5000 ms)
           setTimeout(hideSuccessMessage, 2000); // Cambia el valor para ajustar el tiempo en milisegundos
+        </script>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Psicología Fisherton - Psicóloga Julia Torne",
+          "description": "Psicología Fisherton - Terapia individual, equinoterapia y acompañamiento terapéutico en Fisherton. Turnos presenciales y online.",
+          "telephone": "+5493416498726",
+          "url": "https://juliaps.com/",
+          "logo": "https://juliaps.com/static/aplicacion/assets/img/logo.png",
+          "areaServed": "Fisherton, Rosario, Argentina"
+        }
         </script>
     </body>
 </html>

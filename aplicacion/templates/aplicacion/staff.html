@@ -1,7 +1,76 @@
-{% extends "aplicacion/index.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NMJVCHJ8');</script>
+    <!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJRK7MBXTB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-{% block Body %}
+  gtag('config', 'G-BJRK7MBXTB');
+</script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Psicóloga Julia Torne en Fisherton — terapia individual, equinoterapia y acompañamiento terapéutico. Turnos presenciales y online para adultos y niños." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://psjuliatorne.com/" />
+        <!-- Open Graph -->
+        <meta property="og:title" content="Psicología Fisherton - Psicóloga Julia Torne" />
+        <meta property="og:description" content="Terapia individual, equinoterapia y acompañamiento terapéutico en Fisherton. Turnos presenciales y online. Contacto: +54 9 341 649 8726" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://psjuliatorne.com/" />
+        <meta property="og:image" content="https://psjuliatorne.com/static/aplicacion/assets/img/logo.png" />
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Psicología Fisherton - Psicóloga Julia Torne" />
+        <meta name="twitter:description" content="Psicología Fisherton - Psicóloga Julia Torne - Terapia individual, equinoterapia y acompañamiento terapéutico. Turnos presenciales y online." />
+        <meta name="twitter:image" content="https://psjuliatorne.com/static/aplicacion/assets/img/logo.png" />
+        <title>Psicología Fisherton - Psicóloga Julia Torne</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="logo.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Fontawesome Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+        <link href="whatsapp.css" rel="stylesheet">
+    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/+5493416498726" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <body id="page-top">
+
+<nav style="height: 9vh;" class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="/index.html"><img src="logo.png" height="50" width="">&nbsp;&nbsp;&nbsp;Psicología Fisherton</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item"><a class="btn btn-light btn-m" href="/turnos.html">Sacar Turno</a></li>&nbsp;&nbsp;&nbsp;&nbsp;  
+                <li class="nav-item"><a class="btn btn-light btn-m" href="/staff.html">Nuestro Staff</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            </ul>
+        </div>
+    </div>
+</nav>  
+    
+    
+    
+    
     <header class="mastheadconsultas">
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
@@ -14,31 +83,34 @@
                         </p></td>
 
                         <td>
-                            <div class="container-slide">
-                                <div class="slide">
+                            <div class="container-slide-staff">
+                                <div class="slide-staff">
                                     <ul>
-                            <li><img src="{% static 'aplicacion/assets/img/registro.jpg' %}" alt=""></li>
-                            <li><img src="{% static 'aplicacion/assets/img/titulo.jpg' %}" alt=""></li>
+                            <li><img src="registro.webp" alt="Registro - Psicología Fisherton - Julia Torne"></li>
+                            <li><img src="titulo.webp" alt="Título - Psicología Fisherton - Julia Torne"></li>
+                            <li><img src="atencion_pediatrica_tea_certificado.webp" alt="Certificado Atención Pediátrica TEA - Psicología Fisherton - Julia Torne"></li>
+                            <li><img src="certificado_diagnostico_autismo.webp" alt="Certificado Diagnóstico Autismo - Psicología Fisherton - Julia Torne"></li>
+                            <li><img src="certificado_neurodiversidad_entornos_escolares.webp" alt="Certificado neurodiversidad en entornos escolares - Psicología Fisherton - Julia Torne"></li>
+                            <li><img src="seminario_autismo.webp" alt="Certificado Seminario Autismo - Psicología Fisherton - Julia Torne"></li>
                                     </ul>
                                 </div>
                             </div>
                             </td>
-    
-
-
-
-
-
-                    
-
-
-
-
-
-
-                </table>
+                    </table>
             </div>
         </div>
-    </header>        
+    </header>
+
+    <footer style="height: 10vh;" id="footer" class="bg-light py-4">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+
+            <div class="col-lg-4 text-center mb-5 mb-lg-0">
+
+                <ul class="list-inline mb-0">
+                    <div class="small text-center text-muted">Copyright &copy; 2024 - Jeronimo Torne</div>
+                </ul>
+            </div>
+
+        </div>
         
-{% endblock Body %}
+    </footer>
