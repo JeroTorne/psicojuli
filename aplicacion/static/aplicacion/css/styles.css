@@ -11235,34 +11235,25 @@ header.masthead h1, header.masthead .h1 {
   height: 25rem;
   overflow: hidden;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: fill;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 .container-slide-staff ul{
   display: flex;
   padding: 0;
-  width: 600%; /* ajustar según cantidad de items */
-  animation: slide-staff-anim 30s infinite linear; 
+  width: 200%;
+  animation: slide-staff-anim 45s infinite; 
 }
 
-/* Animación exclusiva para STAFF */
 @keyframes slide-staff-anim {
-  0%   { margin-left: 0; }
-  16.666% { margin-left: 0; } 
-  25%  { margin-left: -100%; }
-  41.666% { margin-left: -100%; }
-  50%  { margin-left: -200%; }
-  66.666% { margin-left: -200%; }
-  75%  { margin-left: -300%; }
-  91.666% { margin-left: -300%; }
-  100% { margin-left: -400%; }
-}
-
-/* pequeño ajuste responsive */
-@media (max-width: 576px){
-  .slide-staff{ width: 18rem; height: 18rem; }
-  .container-slide-staff ul{ animation-duration: 40s; }
+  0%       { margin-left: 0%; }
+  16.666%  { margin-left: 0%; }
+  33.333%  { margin-left: -110%; }
+  49.999%  { margin-left: -220%; }
+  66.666%  { margin-left: -330%; }
+  83.333%  { margin-left: -440%; }
+  100%     { margin-left: -550%; }
 }
 
 
