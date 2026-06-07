@@ -4,55 +4,47 @@
 
 {% block Body %}
 <header class="mastheadconsultas">
-    <div class="container px-4 px-lg-5 h-100">
-        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+
+    <div class="container-calendar">
         <!-- Google Calendar Appointment Scheduling begin -->
         <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0iPvsFTBveoavuHd0Jk4fP51s3Cno42LPbJ_exsefGdAevMi1yLKIIPKIxWhF9TO7X_XDDeDqd?gv=true&ctz=America/Argentina/Buenos_Aires" color="#B8B8D4" style="height: 87vh;width: 100%;border: 0;display: block;background-color:#f8f9fa;border-radius: 0.700rem;" frameborder="0"></iframe>
         <!-- end Google Calendar Appointment Scheduling -->
-        </div>
     </div>
-    
 </header>
 
-<!-- Script para detectar zona horaria diferente -->
+
 <script>
     // Detectar zona horaria del usuario
-    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     
-    // Obtener la hora actual en Argentina y en la zona del usuario
-    const now = new Date();
-    const argentinaTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Argentina/Buenos_Aires' }));
-    const userTime = new Date(now.toLocaleString('en-US', { timeZone: userTimezone }));
+// Obtener la hora actual en Argentina y en la zona del usuario
+const now = new Date();
+const argentinaTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Argentina/Buenos_Aires' }));
+const userTime = new Date(now.toLocaleString('en-US', { timeZone: userTimezone }));
     
-    // Calcular diferencia en horas
-    const diffMilliseconds = userTime - argentinaTime;
-    const diffHours = Math.round(diffMilliseconds / (1000 * 60 * 60));
+// Calcular diferencia en horas
+const diffMilliseconds = userTime - argentinaTime;
+const diffHours = Math.round(diffMilliseconds / (1000 * 60 * 60));
     
-    // Si el usuario NO está en zona horaria argentina (diferencia mayor a 0)
-    if (Math.abs(diffHours) >= 1) {
-        // Determinar si está adelantado o atrasado
-        const diffText = diffHours > 0 
-            ? `${Math.abs(diffHours)} horas adelantado` 
-            : `${Math.abs(diffHours)} horas atrasado`;
+// Si el usuario NO está en zona horaria argentina (diferencia mayor a 0)
+if (Math.abs(diffHours) >= 1) {
+    // Determinar si está adelantado o atrasado
+    const diffText = diffHours > 0 
+        ? `${Math.abs(diffHours)} horas adelantado` 
+        : `${Math.abs(diffHours)} horas atrasado`;
         
-        // Mostrar alerta después de 2 segundos
-        setTimeout(() => {
-            const mensaje = `⚠️ ATENCIÓN - ZONA HORARIA\n\nDetectamos que estás en una zona horaria diferente a Argentina.\n\n` +
+    // Mostrar alerta después de 2 segundos
+    setTimeout(() => {
+        const mensaje = `⚠️ ATENCIÓN - ZONA HORARIA\n\nDetectamos que estás en una zona horaria diferente a Argentina.\n\n` +
                           `Tu zona horaria: ${userTimezone}\n` +
                           `Diferencia: ${diffText} respecto a Argentina (GMT-3)\n\n` +
                           `Por favor, ten esto en cuenta al reservar tu turno.\n\n` +
                           `¿Deseas ver un conversor de horarios?`;
             
-            if (confirm(mensaje)) {
-                window.open('https://www.timeanddate.com/worldclock/converter.html?iso=20250101T120000&p1=51', '_blank');
-            }
-        }, 2000);
-    }
+        if (confirm(mensaje)) {
+            window.open('https://www.timeanddate.com/worldclock/converter.html?iso=20250101T120000&p1=51', '_blank');
+        }
+    }, 2000);
+}
 </script>
-
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- SimpleLightbox plugin JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-
 {% endblock Body %}
