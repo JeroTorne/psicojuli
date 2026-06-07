@@ -4,6 +4,7 @@ from .views import *
 
 urlpatterns = [
     path('', index, name='inicio'),
+    path('robots.txt', robots_txt, name='robots_txt'),
 
 
 

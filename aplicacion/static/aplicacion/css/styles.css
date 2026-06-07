@@ -10925,7 +10925,7 @@ header.masthead {
   
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background:linear-gradient(to bottom, rgba(4, 38, 63, 0.1) 0%, rgba(4, 38, 63, 0.15) 100%), url("bk-image.jpg");
+  background:linear-gradient(to bottom, rgba(4, 38, 63, 0.1) 0%, rgba(4, 38, 63, 0.15) 100%), url("../assets/img/bk-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10935,7 +10935,7 @@ header.masthead {
 header.mastheadconsultas {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background:linear-gradient(to bottom, rgba(4, 38, 63, 0.1) 0%, rgba(4, 38, 63, 0.15) 100%), url("consultas.png");
+  background:linear-gradient(to bottom, rgba(4, 38, 63, 0.1) 0%, rgba(4, 38, 63, 0.15) 100%), url("../assets/img/consultas.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

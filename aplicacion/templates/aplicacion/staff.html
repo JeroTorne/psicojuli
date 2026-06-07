@@ -1,3 +1,5 @@
+{% extends "aplicacion/index.html" %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="es-AR">
     <head>
@@ -55,18 +57,7 @@
     </a>
     <body id="page-top">
 
-<nav style="height: 9vh;" class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="/index.html"><img src="logo.png" height="50" width="">&nbsp;&nbsp;&nbsp;Psicología Fisherton</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-item"><a class="btn btn-light btn-m" href="/turnos.html">Sacar Turno</a></li>&nbsp;&nbsp;&nbsp;&nbsp;  
-                <li class="nav-item"><a class="btn btn-light btn-m" href="/staff.html">Nuestro Staff</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-            </ul>
-        </div>
-    </div>
-</nav>  
+{% block Body %}
     
     
     
@@ -86,12 +77,12 @@
                             <div class="container-slide-staff">
                                 <div class="slide-staff">
                                     <ul>
-                            <li><img src="titulo.webp" alt="Título - Psicología Fisherton - Julia Torne"></li>
-                            <li><img src="registro.webp" alt="Registro - Psicología Fisherton - Julia Torne"></li>                            
-                            <li><img src="atencion_pediatrica_tea_certificado.webp" alt="Certificado Atención Pediátrica TEA - Psicología Fisherton - Julia Torne"></li>
-                            <li><img src="certificado_diagnostico_autismo.webp" alt="Certificado Diagnóstico Autismo - Psicología Fisherton - Julia Torne"></li>
-                            <li><img src="certificado_neurodiversidad_entornos_escolares.webp" alt="Certificado neurodiversidad en entornos escolares - Psicología Fisherton - Julia Torne"></li>
-                            <li><img src="seminario_autismo.webp" alt="Certificado Seminario Autismo - Psicología Fisherton - Julia Torne"></li>
+                            <li><img src="{% static 'aplicacion/assets/img/titulo.webp' %}" alt="Título - Psicología Fisherton - Julia Torne"></li>
+                            <li><img src="{% static 'aplicacion/assets/img/registro.webp' %}" alt="Registro - Psicología Fisherton - Julia Torne"></li>                            
+                            <li><img src="{% static 'aplicacion/assets/img/atencion_pediatrica_tea_certificado.webp' %}" alt="Certificado Atención Pediátrica TEA - Psicología Fisherton - Julia Torne"></li>
+                            <li><img src="{% static 'aplicacion/assets/img/certificado_diagnostico_autismo.webp' %}" alt="Certificado Diagnóstico Autismo - Psicología Fisherton - Julia Torne"></li>
+                            <li><img src="{% static 'aplicacion/assets/img/certificado_neurodiversidad_entornos_escolares.webp' %}" alt="Certificado neurodiversidad en entornos escolares - Psicología Fisherton - Julia Torne"></li>
+                            <li><img src="{% static 'aplicacion/assets/img/seminario_autismo.webp' %}" alt="Certificado Seminario Autismo - Psicología Fisherton - Julia Torne"></li>
                                     </ul>
                                 </div>
                             </div>
@@ -100,7 +91,7 @@
             </div>
         </div>
     </header>
-
+{% endblock Body %}
     <footer style="height: 10vh;" id="footer" class="bg-light py-4">
         <div class="row gx-4 gx-lg-5 justify-content-center">
 
